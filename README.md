@@ -1,0 +1,1 @@
+Notes about papers I read, mainly general Machine Learning and Deep Learning papers.
