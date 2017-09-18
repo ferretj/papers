@@ -43,10 +43,10 @@ each function f is mapped to NN block m(f) ; outputs of children (in the tree) a
 
 modules have generic architectures :
 
-* each n arity func takes n C*H*W features maps and output a C*H*W feature map
+* each n arity func takes n CxHxW features maps and output a CxHxW feature map
 * each unary func is a residual block (standard) with 2 3x3 conv
-* binary modules concatenate inputs to form 2C*H*W feat map, project to C*H*W with a 1x1 conv, and feed to a residual block
-* Scene takes visual features as input, process them with 4 conv layers, and output C*H*W feature map -> visual features are conv4 features from ResNet101
+* binary modules concatenate inputs to form 2CxHxW feat map, project to CxHxW with a 1x1 conv, and feed to a residual block
+* Scene takes visual features as input, process them with 4 conv layers, and output CxHxW feature map -> visual features are conv4 features from ResNet101
 
 final feature map is given to a MLP to produce distrib over possible answers
 
