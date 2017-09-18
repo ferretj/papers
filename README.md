@@ -11,3 +11,4 @@ Notes about some papers I read, mainly general Machine Learning and Deep Learnin
 * [Inferring and Executing Programs for Visual Reasoning (2017)](inferring_executing_programs_vqa.md)
 * [Learning through Dialogue Interactions by Asking Questions (2017)](learning_dialogue_asking_questions.md)
 * [Self-Normalizing Networks (2017)](self_normalizing_networks.md)
+* [Understanding Deep Learning Requires Rethinking Generalization (2016)](rethinking_generalization.md)
