@@ -1,0 +1,37 @@
+#[Self-Normalizing Networks](https://arxiv.org/pdf/1706.02515.pdf) 
+
+by: **Günter Klambauer, Thomas Unterthiner, Andreas Mayr, Sepp Hochreiter (LIT AI Lab & Institute of Bioinformatics)**
+
+##tl;dr
+
+No performances breakthroughs with neural nets on structured data (while CNNs and RNNs crush other models on images and sequential data). SNNs proposed with SELUs (scaled exponential linear units) as activation. Highly robust and deep models that outperform concurrence on 121 ML tasks from UCI ML repo.
+
+##Notes 
+
+feed-forward networks = MLPs = FNNs
+
+state-of-the-art FNNs often don’t get deeper than 4 layers
+
+FNNs are perturbed by normalization techniques and have high variance on training error (not the case for CNNs and RNNs thanks to weight sharing).
+
+SNNs don’t have these drawbacks thanks to self-normalization induced by their activation 
+
+layer is considered normalized if mean and var of activations belong in a given range (fixed beforehand)
+self-normalization property -> transitive/conservation property : if layer is normalized, next layer is normalized as well
+
+*scaled exponential linear unit (SELU)* :
+
+![](imgs/snn.png)
+
+requirements for the activation :
+
+* must have positive and negative values (to control mean)
+* saturation regions (derivatives asymptotically close to 0) (to dampen variance)
+* slope larger than one (to increase variance if too small in previous layer)
+continuous
+
+is equivalent to an ELU with a multiplicative coefficient to ensure slope larger than 1
+
+weight init -> w = 0 (zero mean), tau = 1 (second moment)
+
+**work in progress...**
