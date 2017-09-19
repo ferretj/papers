@@ -1,10 +1,10 @@
-#[Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/pdf/1705.03633.pdf)
+# [Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/pdf/1705.03633.pdf)
 by: **Justin Johnson, Bharath Hariharan, Laurens van der Maaten, Judy Hoffman, Li Fei-Fei,  C. Lawrence Zitnick, Ross Girshick (Stanford University, Facebook AI Research)**
 
-##tl;dr
+## tl;dr
 Traditional Visual Reasoning consists in mapping an input to an output using a black-box architecture, thus without modeling the underlying reasoning process. The paper uses a model with a program generator (modeling this reasoning process) and an execution engine (that executes the program and generates an answer). Both components are neural networks trained via backprop + REINFORCE.
 
-##Notes 
+## Notes 
 
 requirement for a general visual intelligence is composition : should be able to decompose ‘person touching a bike’ by composing knowledge of ‘person’, ‘bike’ and ‘touch’
 
