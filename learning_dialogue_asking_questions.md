@@ -1,10 +1,11 @@
 #[Learning through Dialogue Interactions by Asking Questions](https://openreview.net/pdf?id=rkE8pVcle)
+by: **Jiwei Li, Alexander H. Miller, Sumit Chopra, Marc’Aurelio Ranzato, Jason Weston (Facebook AI Research)**
 
-##tl;dr
+## tl;dr
 
 A dialogue agent should be able to both answer and ask questions, and learn from both scenarios. With this kind of interactions and offline/online approaches, the learner benefits from asking questions. 
 
-##Notes 
+## Notes 
 
 human way : when poor confidence about an answer to give, ask intermediate questions to clarify
 

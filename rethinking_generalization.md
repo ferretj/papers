@@ -1,11 +1,12 @@
 #[Understanding Deep Learning requires rethinking generalization](https://arxiv.org/pdf/1611.03530.pdf) 
+
 by: **Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, Oriol Vinyals (MIT, Google Brain, Berkeley, Google DeepMind)**
 
-##tl;dr
+## tl;dr
 
 Deep Learning systems exhibit small difference between train and test performance. Regularization and generalization capability are misleadingly invoked to explain this phenomenon. The experiments of the paper show that ConvNets easily fit a random labeling of the data, with no impact of explicit regularization, even when replacing images from dataset with random noise. Shows theoretically that 2-deep NNs have perfect expressivity if number of parameters exceeds number of data points (which is the case in practice).
 
-##Notes
+## Notes
 
 VC dimension and Rademacher complexity -> statistical learning theory objects to measure generalization capability
 (Rademacher complexity measures the ability of a model class to fit random binary labeling)

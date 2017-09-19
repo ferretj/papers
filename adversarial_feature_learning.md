@@ -2,11 +2,11 @@
 
 by: **Jeff Donahue, Philipp Krahenbull, Trevor Darrell (University of California, University of Texas)**
 
-##tl;dr
+## tl;dr
 
 Typical GANs are generative models that learn to map a latent representation (f.i. a random 1d vector) to a potentially complex data distribution (f.i. images), but haven’t the ability to map data to this representation to perform unsupervised feature representation (which is for example useful for unsupervised clustering). BiGANs are special GANs that learn this inverse mapping.
 
-##Notes
+## Notes
 
 Application of GANs : make plausible semantic variations via interpolations in the latent space
 

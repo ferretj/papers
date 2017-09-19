@@ -1,4 +1,5 @@
 # [Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/pdf/1705.03633.pdf)
+
 by: **Justin Johnson, Bharath Hariharan, Laurens van der Maaten, Judy Hoffman, Li Fei-Fei,  C. Lawrence Zitnick, Ross Girshick (Stanford University, Facebook AI Research)**
 
 ## tl;dr

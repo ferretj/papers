@@ -2,11 +2,11 @@
 
 by: **Günter Klambauer, Thomas Unterthiner, Andreas Mayr, Sepp Hochreiter (LIT AI Lab & Institute of Bioinformatics)**
 
-##tl;dr
+## tl;dr
 
 No performances breakthroughs with neural nets on structured data (while CNNs and RNNs crush other models on images and sequential data). SNNs proposed with SELUs (scaled exponential linear units) as activation. Highly robust and deep models that outperform concurrence on 121 ML tasks from UCI ML repo.
 
-##Notes 
+## Notes 
 
 feed-forward networks = MLPs = FNNs
 

@@ -2,12 +2,12 @@
 
 by: **Mikołaj Binkowski, Gautier Marti and Philippe Donnat (Imperial College, Ecole Polytechnique, Hellebore Capital)**
 
-##tl;dr
+## tl;dr
 
 AR-like system performing regression for asynchronous time series that presumably present low signal-to-noise ratio and are multivariate.
 Weights are learned via ConvNets and the final predictor is a weighted sum of sub-predictors.
 
-##Notes
+## Notes
  
 autoregression = modeling the mean of the distribution of the future observations, conditioned on some observed data
 
