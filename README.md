@@ -21,5 +21,5 @@ Notes about some papers I read, mainly general Machine Learning and Deep Learnin
 
 Occasionally I present papers or approaches (for journal clubs or meetups) :
 
-* [Siamese Architectures for Question Answering (talk at Deep Learning Meetup)](https://drive.google.com/open?id=1iOWcBSDvqRjqBDIMVeiZSxQRtsCIceUDBa04CLw2APY)
+* [Siamese Architectures for Question Answering (talk at Deep Learning Meetup @Heuritech)](https://drive.google.com/open?id=1iOWcBSDvqRjqBDIMVeiZSxQRtsCIceUDBa04CLw2APY)
 * [Snapshot Ensembles: train 1, get M for free (journal club @DreamQuark)](https://drive.google.com/open?id=1rZ187b0GomaIHWpJ2UqJOLPbskWTIerOEK5vxzBMOe0)
