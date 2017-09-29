@@ -1,11 +1,11 @@
 # [Explaining the Predictions of Any Classifier (2016)](https://arxiv.org/pdf/1602.04938.pdf) 
 
-##tl;dr
+## tl;dr
 
 Machine learning models lack interpretability, mostly locally (around one example). Interpretability is needed to build trust in cases where model predictions are used to take actions. 
 LIME is an attempt at providing local explainability, by fitting an interpretable model around a prediction. 
 
-##Notes
+## Notes
  
 *intro*
 
