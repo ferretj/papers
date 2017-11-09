@@ -14,6 +14,7 @@ Notes about some papers I read, mainly general Machine Learning and Deep Learnin
 * [Neural Language Processing with Small Feed-Forward Networks (2017)](nlp_small_feedforward.md)
 * [Reading Wikipedia to Answer Open-Domain Questions (2017)](drqa.md)
 * [Self-Normalizing Networks (2017)](self_normalizing_networks.md)
+* [Semi-Supervised Learning with Ladder Networks (2015)](ladder_networks.md)
 * [Snapshot Ensembles: train 1, get M for free (2017)](snapshot_ensembles.md)
 * [Understanding Deep Learning Requires Rethinking Generalization (2016)](rethinking_generalization.md)
 

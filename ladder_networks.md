@@ -47,4 +47,8 @@ All samples are used to train Ladder Networks.
 
 Denoising cost multipliers are hyperparameters to tune (first ones are huge, last ones are microscopic).
 
+**Other**
+
+This [link](https://www.reddit.com/r/MachineLearning/comments/3w3egh/the_ladder_network_results_extremely_impressive/) could indicate that paper results are difficult to reproduce and not really generalizable to more complicated datasets.
+
 
