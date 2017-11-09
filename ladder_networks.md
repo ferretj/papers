@@ -12,7 +12,7 @@ Auxiliary tasks : intermediate tasks for layers
 
 ***Ladder Networks :***
 
-![](sslln.png)
+![](imgs/sslln.png)
 
 One unsupervised component and one supervised component, whose encoders share the same weights.
 
@@ -43,7 +43,7 @@ Denoising function : TODO
 
 Labels are balanced (via oversampling ?).
 
-All samples are used to train Ladder Networks.
+All samples in the dataset are used to train Ladder Networks.
 
 Denoising cost multipliers are hyperparameters to tune (first ones are huge, last ones are microscopic).
 
