@@ -1,4 +1,4 @@
-#[Understanding Deep Learning requires rethinking generalization](https://arxiv.org/pdf/1611.03530.pdf) 
+# [Understanding Deep Learning requires rethinking generalization](https://arxiv.org/pdf/1611.03530.pdf) 
 
 by: **Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, Oriol Vinyals (MIT, Google Brain, Berkeley, Google DeepMind)**
 
