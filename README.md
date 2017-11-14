@@ -16,6 +16,7 @@ Notes about some papers I read, mainly general Machine Learning and Deep Learnin
 * [Self-Normalizing Networks (2017)](self_normalizing_networks.md)
 * [Semi-Supervised Learning with Ladder Networks (2015)](ladder_networks.md)
 * [Snapshot Ensembles: train 1, get M for free (2017)](snapshot_ensembles.md)
+* [Temporal Ensembling for Semi-Supervised Learning (2016)](temporal_ensembling.md)
 * [Understanding Deep Learning Requires Rethinking Generalization (2016)](rethinking_generalization.md)
 
 ## Slides
