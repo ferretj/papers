@@ -1,4 +1,4 @@
-# Semi-Supervised Learning with Ladder Networks
+# [Semi-Supervised Learning with Ladder Networks](https://arxiv.org/pdf/1507.02672.pdf)
 
 by: **Antti Rasmus, Harri Valpola, Mikko Honkala, Mathias Berglund, Tapani Raiko (The CuriousAI company)**
 
