@@ -17,7 +17,7 @@ Gaussian processes used as ML approach for time series regression
 
 **SOCNN (Significance-Offset CNN)**
 
-![](imgs/acfatt.png) 
+![](../imgs/acfatt.png) 
 
 two trained networks :
 an offset network : equivalent to a collection of separate predictors for the |I| variables values to predict
@@ -29,7 +29,7 @@ a main loss : the squared error + alpha * the auxiliary loss
 
 an original normalizing activation : *normalized softplus*
 
-![](imgs/acfatt2.png)
+![](../imgs/acfatt2.png)
 
 **Experiments**
 

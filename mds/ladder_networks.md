@@ -14,7 +14,7 @@ Auxiliary tasks : intermediate tasks for layers
 
 ***Ladder Networks :***
 
-![](imgs/sslln.png)
+![](../imgs/sslln.png)
 
 One unsupervised component and one supervised component, whose encoders share the same weights.
 

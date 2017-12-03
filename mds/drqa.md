@@ -52,7 +52,7 @@ weights = attention score between question token and paragraph token
 
 attention is modeled as dot product between non-linear mappings of word emb
 
-![](/imgs/drqa.png)
+![](../imgs/drqa.png)
                                                       
 where E(.) is word embedding operator and ɑ is single dense layer + ReLU (see Learning recurrent span representations for extractive question answering by Lee et al 2016)
 
@@ -67,7 +67,7 @@ interesting ideas :
 concatenation of all hidden states of a recurrent network on question word embeddings
 aggregation is a weighted sum 
 
-![](/imgs/drqa2.png)
+![](../imgs/drqa2.png)
 
 where q is a vector to learn
 
@@ -78,7 +78,7 @@ aim is to predict token span most likely to contain answer in paragraph
 
 a bilinear term is used
 
-![](/imgs/drqa3.png)
+![](../imgs/drqa3.png)
 
 best span is chosen as argmax of Pstart(i) * Pend(i’) where i <= i’ <= i + 15
 score across paragraphs is computed as softmax of unnormalized Pstart(i) * Pend(i’), with all the candidate paragraphs (even across several documents) are used

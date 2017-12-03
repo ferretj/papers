@@ -44,7 +44,7 @@ embeddings extracted from groups are concatenated in one vector, which is referr
 
 one softmax layer
 
-<img src="/imgs/nlpwsffn.png" alt="" style="width: 400px;"/>
+<img src="../imgs/nlpwsffn.png" alt="" style="width: 400px;"/>
 
 memory use is controlled by embeddding matrix sizes
 

@@ -66,7 +66,7 @@ knowledge verification = bot asks teacher if question is relevant to a particula
 
 *knowledge acquisition*
 
-![](imgs/ltdibaq.png)
+![](../imgs/ltdibaq.png)
 
 T/S denotes 5 pairs of unrelated questions / answers
 

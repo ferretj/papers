@@ -13,7 +13,7 @@ Application of GANs : make plausible semantic variations via interpolations in t
 Other option (than BiGANs) is to learn p(z | G(z)) as an inverse mapping. Called latent regressor. 
 Difficult because implies for G to model with extreme precision the data distribution...
 
-![](imgs/afl.png)
+![](../imgs/afl.png)
 
 BiGANs :
 an encoder maps the input data to a latent representation

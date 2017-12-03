@@ -8,6 +8,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [Adversarial Feature Learning (2017)](mds/adversarial_feature_learning.md)
 * [Autoregressive ConvNets for Asynchronous Time Series (2017)](mds/autoregressive_cnn_asynchronous_ts.md)
 * [Explaining the Predictions of Any Classifier (2016)](mds/lime.md)
+* [Generalization in Deep Learning (2017)](mds/gen_in_dl.md)
 * [HOGWILD! : a Lock-Free Approach to Parallelizing SGD (2011)](mds/hogwild.md)
 * [Inferring and Executing Programs for Visual Reasoning (2017)](mds/inferring_executing_programs_vqa.md)
 * [Learning through Dialogue Interactions by Asking Questions (2017)](mds/learning_dialogue_asking_questions.md)
@@ -17,6 +18,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [Semi-Supervised Learning with Ladder Networks (2015)](mds/ladder_networks.md)
 * [Snapshot Ensembles: train 1, get M for free (2017)](mds/snapshot_ensembles.md)
 * [Temporal Ensembling for Semi-Supervised Learning (2016)](mds/temporal_ensembling.md)
+* [Understanding Black-box Predictions via Influence Functions (2017)](mds/bbox_influence_functions.md)
 * [Understanding Deep Learning Requires Rethinking Generalization (2016)](mds/rethinking_generalization.md)
 
 ## Slides

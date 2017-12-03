@@ -14,7 +14,7 @@ The a param is to be learned but a wide range of values outperform the weighted 
 
 Common component removal : remove the projections of the average vectors on their 1st principal component
 
-![algo](imgs/attbbfse.png)
+![](../imgs/attbbfse.png)
 
 Related work :
 

@@ -53,7 +53,7 @@ Pretty impressive. They randomly corrupted a ratio of the labels of the supervis
 
 They suggest that this is due to the training procedure (especially the unsupervised component) constraining the decision function to be flat in the vicinity of samples, allowing correctly labelled neighbors to help counter the corruption. 
 
-![](imgs/tefssl.png)
+![](../imgs/tefssl.png)
 
 ***Experiments***
 

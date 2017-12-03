@@ -22,7 +22,7 @@ Self-normalization property -> transitive/conservation property : if layer is no
 
 ***scaled exponential linear unit (SELU)***
 
-![](imgs/snn.png)
+![](../imgs/snn.png)
 
 requirements for the activation :
 

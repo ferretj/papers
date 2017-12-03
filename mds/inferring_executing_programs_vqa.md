@@ -15,7 +15,7 @@ models mapping input to output on VQA exploit dataset biases instead of reasonin
 * CLEVR gives as info reasoning needed to answer question
 * exploiting only 2% of the reasoning supervision, this approach outperforms non-compositional state-of-the-art by ~20% !!
 
-![](imgs/iaepfvr.png)
+![](../imgs/iaepfvr.png)
 
 program generator and execution engine can be either learned separately (if intermediate labels available) or end-to-end
 generalizes to novel questions requiring unseen module composing -> evaluated thanks to user-generated questions (with oov words) and finetuning without supervision

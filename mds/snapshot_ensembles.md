@@ -32,9 +32,9 @@ idea : each time NN converges to local minimum, save parameters and go back to l
 * lower learning rate quickly but high starting point
 * shifted cosine function used (with max lr alpha0 = 0.1 ou 0.2) :
 
-![](imgs/setogmff2.png)
+![](../imgs/setogmff2.png)
 
-![](imgs/setogmff.png)
+![](../imgs/setogmff.png)
 
 (see [Loschilov & Hutter, 2016](https://arxiv.org/pdf/1608.03983.pdf) for more info about cyclic learning rates)
 
