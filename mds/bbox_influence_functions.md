@@ -28,19 +28,19 @@ Could study change in model parameters via retraining without a certain point bu
 
 Influence functions allow us to approximate the effect of the upweighting of a point on model params :
 
-<img src="../imgs/ubpvif1.png" alt="" style="width: 400px;"/>
+<img src="../imgs/ubpvif1.png" alt="" width="400"/>
 
 The removal of a point is equivalent to its upweighting by -1/n.
 
 Use of chain rule allow us to get influence of upweighting for functions of the model parameters :
 
-<img src="../imgs/ubpvif2.png" alt="" style="width: 400px;"/>
+<img src="../imgs/ubpvif2.png" alt="" width="400"/>
 
 **Perturbing a training input**
 
 Almost same process. 
 
-<img src="../imgs/ubpvif3.png" alt="" style="width: 450px;"/>
+<img src="../imgs/ubpvif3.png" alt="" width="450"/>
 
 Useful to craft adversarial examples or define important features for a test prediction.
 
