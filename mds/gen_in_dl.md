@@ -69,4 +69,4 @@ This provides a bound on risk based on the amount of estimations done on the sam
 
 Thus models with consistent good valid perf on a large enough valid set have strong performance guarantees.
 
-<img src="../imgs/ubpvif4.png" alt="" style="width: 400px;"/>
+<img src="../imgs/ubpvif4.png" alt="" width="400"/>

@@ -17,7 +17,7 @@ Gaussian processes used as ML approach for time series regression
 
 **SOCNN (Significance-Offset CNN)**
 
-![](../imgs/acfatt.png) 
+<img src="../imgs/acfatt.png" alt="" width="350"/>
 
 two trained networks :
 an offset network : equivalent to a collection of separate predictors for the |I| variables values to predict
