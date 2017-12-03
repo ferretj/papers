@@ -1,4 +1,4 @@
-#[Autoregressive ConvNets for Asynchronous Time Series](https://arxiv.org/pdf/1703.04122.pdf)
+# [Autoregressive ConvNets for Asynchronous Time Series](https://arxiv.org/pdf/1703.04122.pdf)
 
 by: **Mikołaj Binkowski, Gautier Marti and Philippe Donnat (Imperial College, Ecole Polytechnique, Hellebore Capital)**
 

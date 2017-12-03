@@ -1,4 +1,4 @@
-# **[A Tough to Beat Baseline for Sentence Embeddings](https://openreview.net/pdf?id=SyK00v5xx)**
+# [A Tough to Beat Baseline for Sentence Embeddings](https://openreview.net/pdf?id=SyK00v5xx)
 
 by: **Sanjeev Arora, Yingyu Liang, Tengyu Ma (Princeton University)**
 
