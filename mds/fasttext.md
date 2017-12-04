@@ -28,6 +28,10 @@ It is similar to the *continuous bag-of-words* (cbow) approach used in word2vec,
 
 Since output space is large, computing the linear classifier roughly costs O(*number of classes* * *dimensionality of input*).
 
+As in Huffman coding, the hierarchical softmax uses a binary tree whose leaves are single classes. The estimated probability of belonging to a given class is equal to the products of probabilities of all parent nodes.
+
+The tree is explored using depth-first search, and exploiting the fact that the probability of a node is lower than its parents', a basic discard scheme can be used to reduce the complexity to O(*number of classes* * log(*dimensionality of input*)).
+
 **work in progress !**
 
 

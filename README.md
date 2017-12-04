@@ -7,6 +7,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [A Tough to Beat Baseline for Sentence Embeddings (2017)](mds/tough_baseline_sentence_embeddings.md)
 * [Adversarial Feature Learning (2017)](mds/adversarial_feature_learning.md)
 * [Autoregressive ConvNets for Asynchronous Time Series (2017)](mds/autoregressive_cnn_asynchronous_ts.md)
+* [Bag of Tricks for Efficient Text Classification (2016)](mds/fasttext.md)
 * [Explaining the Predictions of Any Classifier (2016)](mds/lime.md)
 * [Generalization in Deep Learning (2017)](mds/gen_in_dl.md)
 * [HOGWILD! : a Lock-Free Approach to Parallelizing SGD (2011)](mds/hogwild.md)
