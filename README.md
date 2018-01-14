@@ -13,6 +13,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [HOGWILD! : a Lock-Free Approach to Parallelizing SGD (2011)](mds/hogwild.md)
 * [Inferring and Executing Programs for Visual Reasoning (2017)](mds/inferring_executing_programs_vqa.md)
 * [Learning through Dialogue Interactions by Asking Questions (2017)](mds/learning_dialogue_asking_questions.md)
+* [Letter-Based Speech Recognition with Gated ConvNets (2017)](mds/wav2letter.md)
 * [Neural Language Processing with Small Feed-Forward Networks (2017)](mds/nlp_small_feedforward.md)
 * [Reading Wikipedia to Answer Open-Domain Questions (2017)](mds/drqa.md)
 * [Self-Normalizing Networks (2017)](mds/self_normalizing_networks.md)
