@@ -14,13 +14,13 @@ Standard local interpretability methods :
 * fit a locally faithful model that is interpretable (e.g. LIME)
 * perturb the point and assess how the prediction is affected (e.g. saliency maps)
 
-does not explain on which training data the model relies to predict.
+Does not explain on which training data the model relies to predict.
 
 Influence functions are estimators of the change for the model parameters if we were to retrain it while giving a training point a slightly higher weight.
 
 The assumptions for the learned task (which are quite **strong**) are that the empirical risk is twice-differentiable and strictly convex in the model parameters, but they show that their method still provides useful insights in non-convex settings.
 
-**Upweighting a training point**
+#### Upweighting a training point
 
 Intuitively we want to measure the influence of the removal of training points for the loss function.
 
@@ -36,7 +36,7 @@ Use of chain rule allow us to get influence of upweighting for functions of the 
 
 <img src="../imgs/ubpvif2.png" alt="" width="400"/>
 
-**Perturbing a training input**
+#### Perturbing a training input
 
 Almost same process. 
 
@@ -44,7 +44,7 @@ Almost same process.
 
 Useful to craft adversarial examples or define important features for a test prediction.
 
-**Relation to Euclidean distance**
+#### Relation to Euclidean distance
 
 LIME chooses training points that are most relevant to a particular point as nearest neighbors wrt to a Euclidean distance.
 
