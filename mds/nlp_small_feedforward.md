@@ -9,6 +9,8 @@ Using some techniques, they get close to state-of-the-art on structured and unst
 
 ## Notes 
 
+#### Language tasks on a budget
+
 related work :
 
 * 900000 params only for LSTM-based POS tagging model (Gillick et al 2016)
@@ -30,9 +32,9 @@ preordering for translation
 
 produces models with less than 3Mb in memory
 
-***small Feed-Forward Network Models***
+#### Small Feed-Forward Network Models
 
-*model architecture*
+**model architecture**
 
 types of discrete features (eg. bigrams, trigrams...) define groups
 
@@ -50,7 +52,7 @@ memory use is controlled by embeddding matrix sizes
 
 runtime use is controlled by hidden layer size
 
-*hashed feature ngrams*
+**hashed feature ngrams**
 
 Character ngrams are used (instead of word embeddings, because require large dictionaries and big dimensions), trained from scratch
 
@@ -59,13 +61,13 @@ The size of the vocabulary Vg is fixed for each group and random feature mixing 
 * means that a ngram is indexed by v = H(x) mod Vg (H being a hash function)
 * allows for small vocab sizes (500-1000) and thus smaller feature embeddings (16 coords)
 
-*quantization*
+**quantization**
 
 embedding weights are compressed (from 32bits to 8bits) using a non-inversible transformation (linear + ceil) and a scaling factor that has to be stored
 
 weights are dequantized on-the-fly at runtime
 
-*training*
+**training**
 
 obj. function is crossentropy + L2 reg
 
@@ -73,7 +75,7 @@ exponentially decaying learning rates
 
 hyperoptimization for other hyperparams, with early stopping
 
-***Experiments***
+#### Experiments
 
 * averaging instead of summing embeddings inside same group and same word
 * using Bloom maps to represent word clusters (maps with approximate key-value retrieval)
