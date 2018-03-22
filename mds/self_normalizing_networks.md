@@ -10,21 +10,21 @@ No performances breakthroughs with neural nets on structured data (while CNNs an
 
 (feed-forward networks = MLPs = FNNs)
 
-State-of-the-art FNNs often don’t get deeper than 4 layers
+State-of-the-art FNNs often don’t get deeper than 4 layers.
 
 FNNs are perturbed by normalization techniques and have high variance on training error (not the case for CNNs and RNNs thanks to weight sharing).
 
-SNNs don’t have these drawbacks thanks to self-normalization induced by their activation 
+SNNs don’t have these drawbacks thanks to self-normalization induced by their activation.
 
-A layer is considered normalized if mean and var of activations belong in a given range (fixed beforehand)
+A layer is considered normalized if mean and var of activations belong in a given range (fixed beforehand).
 
-Self-normalization property -> transitive/conservation property : if layer is normalized, next layer is normalized as well
+Self-normalization property -> transitive/conservation property : if layer is normalized, next layer is normalized as well.
 
-***scaled exponential linear unit (SELU)***
+#### Scaled Exponential Linear Unit (SELU)
 
 ![](../imgs/snn.png)
 
-requirements for the activation :
+Requirements for the activation :
 
 * must have positive and negative values (to control mean)
 * saturation regions (derivatives asymptotically close to 0) (to dampen variance)
@@ -33,16 +33,16 @@ requirements for the activation :
 
 is equivalent to an ELU with a multiplicative coefficient to ensure slope larger than 1
 
-***initialization scheme***
+#### Initialization scheme
 
 weight init :
 
 * zero mean
 * unitary sum of squares
 
-in practice, drawn from a Gaussian distribution with zero mean and 1/N variance (N being the amount of elements in the previous layer)
+In practice, drawn from a Gaussian distribution with zero mean and 1/N variance (N being the amount of elements in the previous layer).
 
-***alpha dropout***
+#### Alpha Dropout
 
 Dropout randomly puts activations in the 0-derivative zone of the activation function not to backpropagate any signal through these deactivated neurons.
 
