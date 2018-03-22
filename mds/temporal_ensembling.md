@@ -12,12 +12,12 @@ Dropout, Dropconnect, Stochastic Depth and Swapout are not only forms of regular
 
 Swapout Networks : each unit has access to a random subset of the units of ALL previous layers
 
-**Basic components**
+#### Basic components
 
 * Stochastic augmentation : Gaussian noise + probabilistic flips / rotations / translations
 * Weight ramp-up function : time-dependent weight function that starts at zero and increases along Gaussian curve
 
-**P-model**
+#### P-model
 
 During training, uses two forward passes with two different dropout and augmentation parameterizations and constrains output of both passes to be close (wrt to MSE), which can be interpreted as a variance constraint.
 
@@ -29,7 +29,7 @@ Comparison to Ladder Networks :
 * no auxiliary mapping or loss
 * two equally transformed passes (not clean VS noisy as in Ladder Nets)
 
-**Temporal Ensembling**
+#### Temporal Ensembling
 
 Pros :
 
@@ -47,7 +47,7 @@ Ensembling reduces noise in the reference output.
 
 A bias correction is applied to the ensemble to counterweight the effect of the zero initialization (demonstration in [Adam paper](https://arxiv.org/pdf/1412.6980.pdf)).
 
-***Resistance to incorrect labels*** 
+##### Resistance to incorrect labels 
 
 Pretty impressive. They randomly corrupted a ratio of the labels of the supervised samples and studied the effect on performance.
 
@@ -55,7 +55,7 @@ They suggest that this is due to the training procedure (especially the unsuperv
 
 ![](../imgs/tefssl.png)
 
-***Experiments***
+#### Experiments
 
 Improves state-of-the-art on CIFAR-10 and SVHN, sets it on CIFAR-100 :
 
