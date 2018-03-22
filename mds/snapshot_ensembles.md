@@ -9,7 +9,7 @@ Rapid convergence is obtained via cyclic learning rates.
 
 ## Notes 
 
-Local minima contain useful information -> some are good, some are worse for generalization
+Local minima contain useful information -> some are good, some are worse for generalization.
 
 Kaskar et al, 2016 :
 
@@ -25,7 +25,7 @@ He et al, 2016b :
 Local minima often have similar error rates, but do not perform same mistakes on data
 -> diversity that can be exploited through ensembling
 
-idea : each time NN converges to local minimum, save parameters and go back to large learning rate to escape minimum, then lower again
+Idea : each time NN converges to local minimum, save parameters and go back to large learning rate to escape minimum, then lower again.
 
 *cyclic annealing*
 
@@ -38,4 +38,4 @@ idea : each time NN converges to local minimum, save parameters and go back to l
 
 (see [Loschilov & Hutter, 2016](https://arxiv.org/pdf/1608.03983.pdf) for more info about cyclic learning rates)
 
-at test time, ensemble m last models seen during training
+At test time, ensemble m last models seen during training.
