@@ -9,86 +9,96 @@ machine comprehension of text : identifying text spans as answers   -> by multi-
 
 ## Notes
 
-factoid questions = questions whose answer provides a concise fact
-open-domain questions = questions whose answer is not a list of relevant documents but a short text in natural language
+#### Open-domain QA
 
-Knowledge Bases (KBs) such as DBpedia are easily processed but too sparse for open-domain QA ≠ Wikipedia contains up-to-date info but was designed for humans to read
+Factoid questions = questions whose answer provides a concise fact.
 
-goal = find relevant docs among 5 million and extract answers -> machine reading at scale (MRS)
+Open-domain questions = questions whose answer is not a list of relevant documents but a short text in natural language.
+
+Knowledge Bases (KBs) such as DBpedia are easily processed but too sparse for open-domain QA ≠ Wikipedia contains up-to-date info but was designed for humans to read.
+
+Goal = find relevant docs among 5 million and extract answers -> machine reading at scale (MRS)
 does not use graph structure of Wikipedia
 
-whole model = Document Retriever + Document Reader
+Whole model = Document Retriever + Document Reader :
 
-Document Retriever outperforms built-in Wikipedia search engine
+* Document Retriever outperforms built-in Wikipedia search engine
+* Document Reader is state-of-the-art on SQuAD
 
-Document Reader is state-of-the-art on SQuAD
+Multitask learning helps get better performance on all datasets tested :
 
-multitask learning helps get better performance on all datasets tested
+* it is different from other approaches that use KBs and heteregeneous content additionally
+* it is also different from approaches in which a small passage containing the answer is given as input to the model
 
-different from other approaches that use KBs and heteregeneous content additionally
-different from approaches in which a small passage containing the answer is given as input to the model
+#### Document Retriever
 
-**Document Retriever**
+Non-ML document retrieval system.
 
-non ML document retrieval system
-articles and questions are compared TFIDF weighted bag of words constructed by inverted index lookup
-improvement using local word order and bigrams
-bigrams are mapped to 2^24 bins using the hashing trick (see Feature hashing for large scale multitask learning by Weinberger et al) with murmur3 hash
+Articles and questions are compared TFIDF weighted bag of words constructed by inverted index lookup.
+
+Improvement using local word order and bigrams.
+
+Bigrams are mapped to 2^24 bins using the hashing trick (see Feature hashing for large scale multitask learning by Weinberger et al) with murmur3 hash.
 
 -> set to return 5 Wikipedia articles
 
-**Document Reader**
+#### Document Reader
 
-*1. Paragraph Encoding*
+**1. Paragraph Encoding**
 
-treat paragraphs as a sequence of tokens and feed token features to RNN :
+Treat paragraphs as a sequence of tokens and feed token features to RNN :
 
 * word embeddings
 * exact matching (3 feat.) : 1 if token in question (original form, lowercase, lemmatized)
 * token features : NER, POS, normalized term frequency
 * aligned question embedding : weighted sum of the question word embeddings
 
-weights = attention score between question token and paragraph token
+Weights = attention score between question token and paragraph token.
 
-attention is modeled as dot product between non-linear mappings of word emb
+Attention is modeled as dot product between non-linear mappings of word emb.
 
 ![](../imgs/drqa.png)
                                                       
-where E(.) is word embedding operator and ɑ is single dense layer + ReLU (see Learning recurrent span representations for extractive question answering by Lee et al 2016)
+where E(.) is word embedding operator and ɑ is single dense layer + ReLU (see Learning recurrent span representations for extractive question answering by Lee et al 2016).
 
-interesting ideas :
+Interesting ideas :
 
 * use pretrained embeddings (GloVe, 300 dim)
 * only fine-tune 1000 most frequent words because their representation (f.i. what, where...) could be crucial for QA
 * aligned question embedding link similar non-identical words (f.i. car and vehicle)
 
-*2. Question Encoding*
+**2. Question Encoding**
 
-concatenation of all hidden states of a recurrent network on question word embeddings
-aggregation is a weighted sum 
+Concatenation of all hidden states of a recurrent network on question word embeddings.
+
+Aggregation is a weighted sum. 
 
 ![](../imgs/drqa2.png)
 
-where q is a vector to learn
+where q is a vector to learn.
 
-*3. Prediction*
+**3. Prediction**
 
-aim is to predict token span most likely to contain answer in paragraph
-2 classifiers : 1 for beginning, 1 for end
+The aim is to predict the token span that is the most likely to contain answer in paragraph.
 
-a bilinear term is used
+2 classifiers : 1 for beginning, 1 for end.
+
+A bilinear term is used :
 
 ![](../imgs/drqa3.png)
 
-best span is chosen as argmax of Pstart(i) * Pend(i’) where i <= i’ <= i + 15
-score across paragraphs is computed as softmax of unnormalized Pstart(i) * Pend(i’), with all the candidate paragraphs (even across several documents) are used
+The best span is chosen as argmax of Pstart(i) * Pend(i’) where i <= i’ <= i + 15
 
-**Experiments**
+The score across paragraphs is computed as softmax of unnormalized Pstart(i) * Pend(i’), with all the candidate paragraphs (even across several documents) are used
+
+#### Experiments
  
-features computed using coreNLP
-three layers of bidirectional LSTM used for both question and paragraph
-dropout = 0.3 everywhere
+Features are computed using coreNLP.
 
-**Limitations**
+Three layers of bidirectional LSTM used for both question and paragraph.
 
-not end-to-end : two systems trained separately (Reader & Retriever) 
+Dropout = 0.3 everywhere.
+
+#### Limitations
+
+Not end-to-end : two systems trained separately (Reader & Retriever) 
