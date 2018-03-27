@@ -23,6 +23,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [Temporal Ensembling for Semi-Supervised Learning (2016)](mds/temporal_ensembling.md)
 * [Understanding Black-box Predictions via Influence Functions (2017)](mds/bbox_influence_functions.md)
 * [Understanding Deep Learning Requires Rethinking Generalization (2016)](mds/rethinking_generalization.md)
+* [Unsupervised Representation Learning by Predicting Image Rotations (2018)](mds/predicting_rotations.md)
 
 ## Slides
 
