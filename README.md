@@ -9,6 +9,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [Adversarial Feature Learning (2017)](mds/adversarial_feature_learning.md)
 * [Autoregressive ConvNets for Asynchronous Time Series (2017)](mds/autoregressive_cnn_asynchronous_ts.md)
 * [Bag of Tricks for Efficient Text Classification (2016)](mds/fasttext.md)
+* [Combining Hyperband and Bayesian Optimization (2017)](mds/combining_hb_bo.md)
 * [Deep Reinforcement Learning that Matters (2017)](mds/deeprl_that_matters.md)
 * [Explaining the Predictions of Any Classifier (2016)](mds/lime.md)
 * [Generalization in Deep Learning (2017)](mds/gen_in_dl.md)
