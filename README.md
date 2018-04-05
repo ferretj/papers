@@ -5,8 +5,9 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 ## List of papers 
 
 * [A Tough to Beat Baseline for Sentence Embeddings (2017)](mds/tough_baseline_sentence_embeddings.md)
-* [An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling (2018)](mds/empirical_sequence_modeling.md)
 * [Adversarial Feature Learning (2017)](mds/adversarial_feature_learning.md)
+* [An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling (2018)](mds/empirical_sequence_modeling.md)
+* [Attention is all you Need (2017)](mds/attention_is_all_you_need.md)
 * [Autoregressive ConvNets for Asynchronous Time Series (2017)](mds/autoregressive_cnn_asynchronous_ts.md)
 * [Bag of Tricks for Efficient Text Classification (2016)](mds/fasttext.md)
 * [Combining Hyperband and Bayesian Optimization (2017)](mds/combining_hb_bo.md)
