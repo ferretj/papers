@@ -38,6 +38,12 @@ The basic block of the attention mechanism is the Scaled-Dot Product Attention t
 
 The attention mechanism here is Multi-Head Attention, which concatenates k blocks consisting in a linear projection followed by Scaled-Dot Product Attention. Each block can learn different attention associations between inputs, which makes the model richer. 
 
+#### Additional resources
+
+The paper annotated with code blocks and remarks :
+
+http://nlp.seas.harvard.edu/2018/04/03/attention.html 
+
 #### Code
 
 https://github.com/tensorflow/tensor2tensor
