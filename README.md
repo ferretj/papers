@@ -19,6 +19,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [Learning through Dialogue Interactions by Asking Questions (2017)](mds/learning_dialogue_asking_questions.md)
 * [Letter-Based Speech Recognition with Gated ConvNets (2017)](mds/wav2letter.md)
 * [Natural Language Processing with Small Feed-Forward Networks (2017)](mds/nlp_small_feedforward.md)
+* [Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders](mds/nsynth.md)
 * [Reading Wikipedia to Answer Open-Domain Questions (2017)](mds/drqa.md)
 * [Self-Normalizing Networks (2017)](mds/self_normalizing_networks.md)
 * [Semi-Supervised Learning with Ladder Networks (2015)](mds/ladder_networks.md)
