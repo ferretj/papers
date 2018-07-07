@@ -49,3 +49,9 @@ Analysis of how SGD is an implicit regularizer
 There exists an upper bound on generalization error of a SGD-trained model in terms of number of steps (?).
 
 Optimization remains easy for NN models even when not generalizing, which shows that the reason why optimization is easy and the true cause for generalization must be different.
+
+#### Conclusion
+
+Shows that the inductive biases (architecture, generalization) we usually evoke to justify the results of Deep Learning fail to explain its generalization capability.
+
+Also, the fact that we can learn with arbitrary training error a random dataset with just a constant factor increase in computation seem to imply that the reason why optimization of Deep Learning models is easy and why it can generalize so well are distinct
