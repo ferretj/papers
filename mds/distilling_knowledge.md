@@ -2,11 +2,11 @@
 
 by: **Geoff Hinton, Oriol Vinyals, Jeff Dean (Google)**
 
-##tl;dr
+## tl;dr
 
 A technique to distill the knowledge of a high-performance ensemble of models into a smaller model that still performs well and can be used for inference and deployment. 
 
-##Notes
+## Notes
 
 Insects have a larval state optimized to get resources and an adult state that is optimized to interact with the world. 
 

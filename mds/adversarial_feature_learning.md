@@ -8,7 +8,7 @@ Typical GANs are generative models that learn to map a latent representation (f.
 
 ## Notes
 
-Application of GANs : make plausible semantic variations via interpolations in the latent space
+Application of GANs : make plausible semantic variations via interpolations in the latent space.
 
 Other option (than BiGANs) is to learn p(z | G(z)) as an inverse mapping. Called latent regressor.
 
@@ -18,9 +18,9 @@ Difficult because implies for G to model with extreme precision the data distrib
 
 BiGANs :
 
-* an encoder maps the input data to a latent representation
+* An encoder maps the input data to a latent representation
 * D discriminates in both data space (x vs G(z)) and latent space (z vs E(x))
-* no communication between E and G   ->   E(G(z)) never computed
+* No communication between E and G   ->   E(G(z)) never computed
 
 Training scheme is the alternating gradient approach developed by Goodfellow in the GAN paper ; but D, G, E are updated simultaneously.
 
@@ -30,7 +30,7 @@ Swapping real and generated labels Y provides stronger gradient (see [Goodfellow
 
 Generalized BiGAN (for high-dimensional data) : 
 
-* encoder use higher resolution inputs, while generator input and discriminator output are lower resolution
+* Encoder use higher resolution inputs, while generator input and discriminator output are lower resolution
 
 Self-supervised learning : using data’s natural structure (f.i. patch organization in images) as a means to do supervised learning in an unsupervised way (f.i. predict location of a patch around a center patch in an image).
 
