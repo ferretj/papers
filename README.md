@@ -23,6 +23,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [Natural Language Processing with Small Feed-Forward Networks (2017)](mds/nlp_small_feedforward.md)
 * [Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders (2017)](mds/nsynth.md)
 * [Reading Wikipedia to Answer Open-Domain Questions (2017)](mds/drqa.md)
+* [Realistic Evaluation of Semi-Supervised Algorithms (2018)](mds/realistic_ssl_eval.md)
 * [Self-Normalizing Networks (2017)](mds/self_normalizing_networks.md)
 * [Semi-Supervised Learning with Ladder Networks (2015)](mds/ladder_networks.md)
 * [Snapshot Ensembles: train 1, get M for free (2017)](mds/snapshot_ensembles.md)
