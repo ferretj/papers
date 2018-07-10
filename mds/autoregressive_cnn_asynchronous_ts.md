@@ -9,29 +9,31 @@ Weights are learned via ConvNets and the final predictor is a weighted sum of su
 
 ## Notes
  
-autoregression = modeling the mean of the distribution of the future observations, conditioned on some observed data
+Autoregression = modeling the mean of the distribution of the future observations, conditioned on some observed data.
 
-idea = coupling classical non-parametric linear models with DL models that are able to exhibit fine-grained patterns
+Traditionally, Gaussian processes are used as the standard ML approach for time series regression.
 
-Gaussian processes used as ML approach for time series regression
+Their idea is a combination classical non-parametric linear models with DL models that are able to exhibit fine-grained patterns.
 
 **SOCNN (Significance-Offset CNN)**
 
 <img src="../imgs/acfatt.png" alt="" width="350"/>
 
-two trained networks :
-an offset network : equivalent to a collection of separate predictors for the |I| variables values to predict
-a significance network : outputs weights that are used to weigh the different predictors independently for each variable
+Two trained networks :
 
-two losses :
-an auxiliary loss : the mean difference between subpredictors’ predictions (offsets) and the ground truth (offset between x[t-i] and x[t])
-a main loss : the squared error + alpha * the auxiliary loss
+* the Offset network : equivalent to a collection of separate predictors for the |I| variables values to predict
+* the Significance network : outputs weights that are used to weigh the different predictors independently for each variable
 
-an original normalizing activation : *normalized softplus*
+Two losses :
+
+* the auxiliary loss : the mean difference between subpredictors’ predictions (offsets) and the ground truth (offset between x[t-i] and x[t])
+* the main loss : the squared error + alpha * the auxiliary loss
+
+They use an original normalizing activation : *normalized softplus*
 
 ![](../imgs/acfatt2.png)
 
-**Experiments**
+#### Experiments
 
 * used leaky ReLU with alpha = 0.1
 * small learning rates (0.001)
