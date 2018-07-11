@@ -12,28 +12,32 @@ Schemes to parallelize SGD require memory locking and synchronization. HOGWILD! 
 
 SGD is not embarrassingly parallel by construction, which is too bad because multicore setups are inexpensive.
 
-Multicore computing :
+**1. Multicore computing**
 
-* reading and writing in shared memory = ~12Gb/s
-* data from RAID disk to main memory = ~1Gb/s
+* reading and writing in shared memory = ***~12Gb/s***
+* data from RAID disk to main memory = ***~1Gb/s***
 
--> bottleneck = synchronization of processes
+Bottleneck = synchronization of processes
 
-VS
+**2. Cluster computing**
 
-Cluster computing :
+* reading incoming data = ***~10Mo/s*** (due to checkpointing so that if a node fails, the node’s job can be rescheduled to another node without information loss)
 
-* reading incoming data = ~10Mo/s (due to checkpointing so that if a node fails, the node’s job can be rescheduled to another node without information loss)
+HOGWILD! was designed with the goal in mind to bring the best out of a multicore setup for a SGD task. 
 
-HOGWILD! is doomed to fail in general as processes overwrite each other’s progress, but not in a sparse context, where it is rare that processes write over the same memory portion.
+It is doomed to fail in general as processes overwrite each other’s progress, but not in a sparse context, where it is rare that processes write over the same memory portion.
 
--> almost linear speedups in sparse learning tasks
+Almost linear speedups in sparse learning tasks !
 
-*Sparse separable cost functions*
+*In practice, it is used for general ML tasks that are often not sparse at all, but does not provide the same speedups neither.*
 
-These are functions (entry = vector in Rn) to minimize that can be written as the sum of subfunctions taking as entry a subvector : each subfunction only deals with a small amount of coordinates among 1, 2 ... n.
+**Sparse separable cost functions**
 
-For sparse SVM, we sum error on all examples of the dataset, and for each example, the subset of coordinates considered is non-zero coordinates for this particular example !
+These are functions (entry = vector in Rn) to minimize that can be written as the sum of subfunctions taking as entry a subvector : each subfunction only deals with a small amount of components among 1, 2 ... n.
+
+For sparse SVM (in which setup examples are known to be sparse), for each example, the subset of components considered is its set of non-zero components !
+
+For a given example, we introduce the notion of hypergraph. A hypergraph is made of nodes (components / weights) and hyperedges (collections of components). In the sparse SVM setup, hyperedges are a combination of components for which several examples have nonzero values.
 
 A task in considered sparse if three quantities are small :
 
@@ -49,7 +53,7 @@ For each thread, asynchronously :
 
 * sample an input uniformly
 * evaluate function G on that input (according to corresponding hyperedge)
-* update nodes belonging to hyperedge, as in standard SGD
+* update nodes (weights) belonging to hyperedge, as in standard SGD
 software side
 
 Parameters are stored in shared memory.
@@ -58,9 +62,10 @@ The update operation is a compare-and-exchange operation on multicore processors
 Stepsize (aka learning rate) is supposedly constant.
 
 xj is defined as the state of x after j updates.
+
 It is calculated using a stale gradient, that is a gradient based on a value quite anterior to xj-1 in practice.
 
-**fast rates for lock-free parallelism**
+**Fast rates for lock-free parallelism**
 
 Hypotheses : 
 
