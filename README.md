@@ -24,6 +24,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders (2017)](mds/nsynth.md)
 * [On the Convergence of Adam and Beyond (2018)](mds/beyond_adam.md)
 * [Playing Atari with 6 Neurons (2018)](mds/atari_six_neurons.md)
+* [Playing Hard Exploration Games by Watching YouTube (2018)](mds/playing_hard_games_youtube.md)
 * [Reading Wikipedia to Answer Open-Domain Questions (2017)](mds/drqa.md)
 * [Realistic Evaluation of Semi-Supervised Algorithms (2018)](mds/realistic_ssl_eval.md)
 * [Self-Normalizing Networks (2017)](mds/self_normalizing_networks.md)
