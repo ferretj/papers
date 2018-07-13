@@ -9,6 +9,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling (2018)](mds/empirical_sequence_modeling.md)
 * [Are All GANs Created Equal ? (2017)](mds/are_gans_created_equal.md)
 * [Attention is all you Need (2017)](mds/attention_is_all_you_need.md)
+* [AutoAugment : Learning Augmentation Policies from Data (2018)](mds/autoaugment.md)
 * [Autoregressive ConvNets for Asynchronous Time Series (2017)](mds/autoregressive_cnn_asynchronous_ts.md)
 * [Bag of Tricks for Efficient Text Classification (2016)](mds/fasttext.md)
 * [Combining Hyperband and Bayesian Optimization (2017)](mds/combining_hb_bo.md)
