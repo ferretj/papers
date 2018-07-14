@@ -52,7 +52,7 @@ Splits an example along the channel dimension and perform an elementwise affine 
 
 Final architecture :
 
-<img src="../imgs/ggfwic2.png" alt="" width="500"/>
+<img src="../imgs/ggfwic2.png" alt="" width="700"/>
 
 #### Latent space manipulation
 
@@ -62,17 +62,17 @@ Doing the same for the rest of the images and subtracting the two vectors gives 
 
 Here's the OpenAI snippet to do that :
 
-<img src="../imgs/ggfwic3.png" alt="" width="500"/>
+<img src="../imgs/ggfwic3.png" alt="" width="600"/>
 
 #### Results
 
 On CelebA-HQ, here is a sample of the images synthesized :
 
-<img src="../imgs/ggfwic4.png" alt="" width="500"/>
+<img src="../imgs/ggfwic4.png" alt="" width="650"/>
 
 Log-likelihood of Glow versus RealNVP (previous state-of-the-art flow-based modeling) :
 
-<img src="../imgs/ggfwic5.png" alt="" width="500"/>
+<img src="../imgs/ggfwic5.png" alt="" width="800"/>
 
 #### Code
 
