@@ -17,6 +17,7 @@ Notes in Markdown about papers I read, mainly general Machine Learning and Deep 
 * [Deep Reinforcement Learning that Matters (2017)](mds/deeprl_that_matters.md)
 * [Explaining the Predictions of Any Classifier (2016)](mds/lime.md)
 * [Generalization in Deep Learning (2017)](mds/gen_in_dl.md)
+* [Glow : Generative Flow with Invertible 1x1 Convolutions (2018)](mds/glow.md)
 * [HOGWILD! : a Lock-Free Approach to Parallelizing SGD (2011)](mds/hogwild.md)
 * [Inferring and Executing Programs for Visual Reasoning (2017)](mds/inferring_executing_programs_vqa.md)
 * [Learning through Dialogue Interactions by Asking Questions (2017)](mds/learning_dialogue_asking_questions.md)
